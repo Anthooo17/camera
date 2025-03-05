@@ -59,7 +59,7 @@ export class CameraService {
         photo = await Camera.getPhoto({
           quality: 90,
           allowEditing: false,
-          resultType: CameraResultType.Uri,
+          resultType: CameraResultType.Base64,
           source: CameraSource.Camera
         });
       } else {
